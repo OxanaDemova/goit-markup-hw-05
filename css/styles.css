@@ -196,7 +196,8 @@ img {
   transform: scaleX(0);
   transition: transform var(--animation-time) var(--main-timing-function);
 }
-.site-nav-link:hover::after {
+.site-nav-link:hover::after,
+.site-nav-link:focus::after {
   content: "";
 
   position: absolute;
@@ -234,7 +235,8 @@ img {
   fill: currentColor;
 }
 
-.header-contacts-item > .link:hover {
+.header-contacts-item > .link:hover,
+.header-contacts-item > .link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -435,7 +437,9 @@ img {
 .team-contacts-link :not(:last-child) {
   margin-left: 10px;
 }
-.team-contacts-link:hover {
+
+.team-contacts-link:hover,
+.team-contacts-link:focus {
   fill: var(--main-color);
   background-color: var(--accent-color);
   border-radius: 50px;
@@ -638,7 +642,8 @@ img {
   color: var(--main-color);
   background-color: rgba(33, 150, 243, 0.9);
 }
-.samples-card:hover .samples-action-text {
+.samples-card:hover .samples-action-text,
+.samples-card:focus .samples-action-text {
   transform: translateY(0);
 }
 
